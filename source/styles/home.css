@@ -1,0 +1,98 @@
+#page-home{ /* # usado para se referir a ID específico */
+    height: 100vh;
+    background: url("../assets/home-background.svg") no-repeat;
+    background-position: 35vw bottom;
+}
+
+#page-home .content{ /* . utilizado para se referir a classe específica */
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;  
+    margin: 0 auto;
+    display: flex; /* Como os elementos serão exibidos na tela */
+    flex-direction: column;
+}
+
+#page-home header{
+    margin-top: 48px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-home header a{
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700;
+    align-items: center;
+}
+
+
+#page-home header a span{
+    margin-right: 16px;
+    background-image: url("../assets/log-in.svg");
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main{
+    max-width: 560px; 
+    height: 600px;
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Determina como o display flex vai se alinhar */
+    justify-content: center;
+}
+
+#page-home main h1{
+    font-size: 54px;
+}
+
+#page-home main p{
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+}
+
+#page-home main a{
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    background-color: var(--primary-color);
+    transition: 300ms; /* tempo de transição para o hover */
+}
+
+#page-home main a:hover{ /* :hover caracteriza quando o mouse passa em cima */
+    background-color: #2fb86e;
+}
+
+#page-home main a span{
+    width: 72px;
+    height: 72px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home main a span::after{ /* ::after - seletor que insere algo depois de todo conteúdo de cada elemento selecionado
+                                  ::before - usado para inserir conteúdo antes */
+    content: "";
+    background-image: url(../assets/search.svg); /* faz referência à imagem, dica: usar "../" para encontrar paths de arquivos */
+    width: 20px;
+    height: 20px;
+
+}
+
+#page-home main a strong{
+    flex: 1;
+    color: white;
+    text-align: center;
+}

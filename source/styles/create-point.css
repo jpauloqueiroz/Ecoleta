@@ -1,0 +1,36 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto; /* Padrão alinhamento de caixa no meio da tela (pelo lado de fora) */
+}
+
+#page-create-point header{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-create-point header a{
+    display: flex;
+    color: var(--title-color);
+    font-weight: bold;
+    align-items: center;
+}
+
+#page-create-point header a span{
+    margin-right: 16px;
+    background-image: url("../assets/arrow-left.svg");
+    width: 20px;
+    height: 24px;
+}
+
+form{
+    background-color: white;
+    margin: 80px auto;
+    padding: 64px; /* Preenchimento lateral (borda) */
+    border-radius: 8px; /* Arredonda pontas da caixa */
+    max-width: 730px;
+}
+
+

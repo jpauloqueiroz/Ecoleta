@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt_br"> <!--Altera a língua do site-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ecoleta</title><!--Nome da Página-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet"><!--Referência às fontes-->
+    
+    <!--Links com arquivos CSS-->
+    <link rel="stylesheet" href="/source/styles/main.css">
+    <link rel="stylesheet" href="/source/styles/create-point.css">
+    <link rel="stylesheet" href="/source/styles/responsive.css">
+
+</head>
+
+<body> <!--É o corpo da página-->
+
+    <div id="page-create-point">
+
+            <header><!--Topo da página-->
+                <img src="../source/assets/logo.svg" alt="Logomarca">
+                
+                <a href="#"><span></span>Voltar para home</a><!--"a" cria um link, "href" é o link. Span é ícone ao lado do link-->
+            </header>
+
+            <!--Formulário de preenchimento-->
+            <form action="">
+
+                <h1>Cadastro do ponto de coleta</h1>
+
+                <fieldset><!--Sentido semântico, coleção de campos-->
+                    <legend>
+                        <h2>Dados da entidade</h2>
+                    </legend>
+                    
+                    <div class="field"><!-- .field para iniciar uma div com a classe field -->
+                        <label for="name">Nome da entidade</label>
+                        <input type="text" name="name">
+                    </div>
+                    
+                    <div class="field-group"> <!-- .field-group para iniciar uma div com a classe field -->
+                        <div class="field"> <!-- .field * 2 para iniciar duas div classe field -->
+                            <label for="address">Endereço</label>
+                            <input type="text" name = "address"> 
+                        </div>
+                        <div class="field">
+                            <label for="address2">Número/Complemento</label> <!--Para indicar caixa para inserir informação-->
+                            <input type="text" name = "address2"> <!--Caixa de entrada para o usuário do site inserir informações solicitadas-->
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="state">Estado</label>
+                            <select name="state"> <!-- caixa de seleção, dentro dela são colocadas as opções-->
+                                <option value="">Selecione o Estado</option> <!-- Adicionar opção na caixa de seleção, o primeiro(sem valor) indicará a default)-->
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="city">Cidade</label>
+                            <select name="city" disabled> <!-- disable , desabilita a caixa de seleção -->
+                                <option value="">Selecione a Cidade</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>
+                        <h2>Itens de coleta</h2>
+                    </legend>
+                </fieldset>
+                
+                <button type = "submit">Cadastrar ponto de coleta</button> <!-- botão do tipo submit envia formulário -->
+            </form>
+
+    </div>
+
+</body>
+</html>
