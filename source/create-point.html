@@ -55,9 +55,10 @@
                     <div class="field-group">
                         <div class="field">
                             <label for="state">Estado</label>
-                            <select name="state"> <!-- caixa de seleção, dentro dela são colocadas as opções-->
-                                <option value="">Selecione o Estado</option> <!-- Adicionar opção na caixa de seleção, o primeiro(sem valor) indicará a default)-->
+                            <select name="uf"> <!-- caixa de seleção, dentro dela são colocadas as opções-->
+                                <option value="">Selecione o Estado</option> <!-- Adicionar opção na caixa de seleção, o primeiro(sem valor) indicará a default)-->                                   
                             </select>
+                            <input type="hidden" name="state">
                         </div>
                         <div class="field">
                             <label for="city">Cidade</label>
@@ -79,6 +80,6 @@
             </form>
 
     </div>
-
+    <script src="/source/scripts/create-point.js"></script>
 </body>
 </html>
